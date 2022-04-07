@@ -18,6 +18,10 @@
 </head>
 <body>
     <!--============ SIDEBAR ============-->
+    <div class="nav__toggle" id="nav-toggle">
+        <i class="uil uil-bars"></i>
+    </div>
+    
     <aside class="sidebar" id="sidebar">
         <nav class="nav">
             <div class="nav__logo">
@@ -53,6 +57,10 @@
             <div class="btn__share">
                 <i class="uil uil-share-alt social__share"></i>
             </div>
+            
+            <div class="nav__close" id="nav-close">
+                <i class="uil uil-times"></i>
+            </div>
         </nav>
     </aside>
 
@@ -61,56 +69,55 @@
         <!--===== Home =====-->
         <section class="home" id="home">
             <div class="home__container container grid">
-                <div class="home__social">
-                    <span class="home__social-follow">Follow me</span>
-                    <div class="home__social-links">
-                        <a href="https://twitter.com/ramasbeinaty" target="_blank" class="home__social-link">
-                            <i class="uil uil-twitter"></i>
-                        </a>
-                        <a href="https://github.com/ramasbeinaty" target="_blank" class="home__social-link">
-                            <i class="uil uil-github"></i>
-                        </a>
-                        <a href="https://www.instagram.com/ramasbeinaty/" target="_blank" class="home__social-link">
-                            <i class="uil uil-instagram"></i>
-                        </a>
-                    </div>
-                </div>
 
-                <img src="assets/img/personal-img.png" alt="" class="home__img">
-
-                <div class="home__data">
-                    <h1 class="home__title">Hi! I'm Rama</h1>
-                    <h3 class="home__subtitle">Software Engineer</h3>
-                    <p class="home__description">Got experience in Python, C, C++, Cypress, and Full Stack Web Development.</p>
-                    <a href="#about" class="button">
-                        <i class="uil uil-user button__icon"></i> More About Me
-                    </a>
-                </div>
-
-                <div class="my__info">
-                    <div class="info__item clickable__block">
-                        <i class="uil uil-envelope-edit info__icon"></i>
-
-                        <div>
-                            <h3 class="info__title">Email</h3>
-                            <span class="info__subtitle">ramasbeinaty@gmail.com</span>
-                            <a class="clickable__block__link" href="mailto:ramasbeinaty@gmail.com" target="_blank"></a>
+                    <div class="home__social">
+                        <span class="home__social-follow">Follow me</span>
+                        <div class="home__social-links">
+                            <a href="https://twitter.com/ramasbeinaty" target="_blank" class="home__social-link">
+                                <i class="uil uil-twitter"></i>
+                            </a>
+                            <a href="https://github.com/ramasbeinaty" target="_blank" class="home__social-link">
+                                <i class="uil uil-github"></i>
+                            </a>
+                            <a href="https://www.instagram.com/ramasbeinaty/" target="_blank" class="home__social-link">
+                                <i class="uil uil-instagram"></i>
+                            </a>
                         </div>
                     </div>
 
-                    <div class="info__item clickable__block">
-                        <i class="uil uil-twitter info__icon"></i>
+                    <img src="assets/img/personal-img.png" alt="" class="home__img">
+    
+                    <div class="home__data">
+                        <h1 class="home__title">Hi! I'm Rama</h1>
+                        <h3 class="home__subtitle">Software Engineer</h3>
+                        <p class="home__description">Got experience in Python, C, C++, Cypress, and Full Stack Web Development.</p>
+                        <a href="#about" class="button">
+                            <i class="uil uil-user button__icon"></i> More About Me
+                        </a>
+                    </div>
 
-                        <div>
-                            <h3 class="info__title">Twitter</h3>
-                            <span class="info__subtitle">@ramasbeinaty</span>
-                            <a class="clickable__block__link" href="https://twitter.com/ramasbeinaty" target="_blank"></a>
+                    <div class="my__info">
+                        <div class="info__item clickable__block">
+                            <i class="uil uil-envelope-edit info__icon"></i>
+    
+                            <div>
+                                <h3 class="info__title">Email</h3>
+                                <span class="info__subtitle">ramasbeinaty@gmail.com</span>
+                                <a class="clickable__block__link" href="mailto:ramasbeinaty@gmail.com" target="_blank"></a>
+                            </div>
+                        </div>
+    
+                        <div class="info__item clickable__block">
+                            <i class="uil uil-twitter info__icon"></i>
+    
+                            <div>
+                                <h3 class="info__title">Twitter</h3>
+                                <span class="info__subtitle">@ramasbeinaty</span>
+                                <a class="clickable__block__link" href="https://twitter.com/ramasbeinaty" target="_blank"></a>
+                            </div>
                         </div>
                     </div>
-
-                    </div>
-                </div>
-
+                    
             </div>
         </section>
 
@@ -123,7 +130,7 @@
 
                 <div class="about__data">
                     <h3 class="about__heading">Hi, I'm Rama Sbeinaty - Based in Dubai, UAE</h3>
-                    <p class="about__description">Software Engineer, with extensive knowledge in python,
+                    <p class="about__description">A recent graduate and a Software Engineer, with extensive knowledge in python,
                         c, and c++, and currently learning full stack development to develop and deliver 
                         quality websites.
                     </p>
@@ -686,8 +693,7 @@
 
                         <p class="details__description">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Praesent elementum pulvinar malesuada. Suspendisse luctus 
-                            ornare sem ac efficitur. Nunc ut mi velit. Fusce pharetra risus odio,
+                            Praesent elementum pulvinar malesuada. Fusce pharetra risus odio,
                             in dapibus dui laoreet nec. Etiam ac pharetra ipsum.
                         </p>
 
@@ -768,7 +774,7 @@
                         </a>
                     </div>
                 </div>
-                
+
                 <p class="footer__copyrights">&#169; Rama Sbeinaty, All Copyrights Reserved.</p>
             </div>
         </footer>

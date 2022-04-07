@@ -1,4 +1,19 @@
+/*=========== SHOW SIDEBAR ===========*/
+const navMenu = document.getElementById('sidebar'),
+    navToggle = document.getElementById('nav-toggle'),
+    navClose = document.getElementById('nav-close')
 
+    if (navToggle) {
+        navToggle.addEventListener("click", () => {
+            navMenu.classList.add('show-sidebar')
+        })
+    }
+
+    if (navClose) {
+        navClose.addEventListener("click", () => {
+            navMenu.classList.remove('show-sidebar')
+        })
+    }
 
 /*=========== SIDEBAR NAV ===========*/
 const navbar_links = document.querySelectorAll('.nav__link')
@@ -85,4 +100,31 @@ function workCardItemDetails(wordCardItem) {
         ".work__title").innerHTML;
         document.querySelector(".work__card__popup-body").innerHTML = wordCardItem.querySelector(
             ".work__item-details").innerHTML;
+}
+
+/*=========== SCROLL SECTIONS ACTIVE LINK ===========*/
+// get all the sections with attribute id
+const sections = document.querySelectorAll("section[id]");
+
+// add an event listener to for scroll action
+window.addEventListener("scroll", navHighlighter)
+
+function navHighlighter() {
+    let scrollY = window.pageYOffset;
+
+    // get height, top and id values of each section
+    sections.forEach(current => {
+        const sectionHeight = current.offsetHeight;
+        const sectionTop = current.offsetTop - 50;
+        const sectionId = current.getAttribute("id");
+
+        // if current scroll position enters current section area, add .active class to link; else remove it.
+        if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight)
+        {
+            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add("active-link");
+        }
+        else {
+            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active-link')
+        }
+    })
 }
