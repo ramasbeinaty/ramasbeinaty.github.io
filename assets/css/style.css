@@ -9,6 +9,7 @@
     /* HSL Color Mode*/
     --skin-color: hsl(342, 92%, 46%);
     --title-color: hsl(var(--hue-color), 8%, 95%);
+    --subtitle-color:#ded3d6;
     --text-color: hsl(var(--hue-color), 8%, 85%);
     --body-color: hsl(var(--hue-color), 19%, 5%);
     --box-color: hsl(var(--hue-color), 14%, 10%);
@@ -138,6 +139,15 @@ button {
     font-size: var(--normal-font-size);
     font-weight: var(--font-medium);
     color: var(--skin-color);
+}
+
+.section__title::after{
+    content: attr(data-subtitle);
+    display:block;
+    font-size: var(--smaller-font-size);
+    font-weight: var(--font-medium);
+    /* color:  #cc0843; */
+    color:  var(--subtitle-color);
 }
 
 .clickable__block {
